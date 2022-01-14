@@ -1,14 +1,25 @@
 import React from 'react';
 
-import Navbar from '../../components/Navbar';
+import Navbar from '../Navbar';
+import InputSearch from '../InputSearch';
 
-import { Container } from './styles';
+import { 
+  Container, 
+  Content,
+  Title,
+  Subtitle 
+} from './styles';
 
 function Header() {
   return (
     <Container>
       <Navbar />
-      <h1>Eu sou o header</h1>
+
+      <Content>
+          <Title>Torne o seu interior mais <br />minimalista &amp; moderno</Title>
+          <Subtitle>Transforme sua casa ou escritório com Panto em muito mais <br />minimalista e moderna com facilidade e rapidez</Subtitle>
+          <InputSearch /> 
+      </Content>
     </Container>
   );
 }

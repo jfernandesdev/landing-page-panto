@@ -10,6 +10,18 @@ export default createGlobalStyle`
   body {
     overflow-x: hidden;
     font: 16px 'Gilroy', 'Inter', Arial, Helvetica, sans-serif;
+
+    ::-webkit-scrollbar {
+      width: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: rgba(36, 37, 41, 0.5);
+    }
+  }
+
+  body, input, button, textarea { 
+    font: 16px 'Gilroy', 'Inter', Arial, Helvetica, sans-serif;
   }
 
   :root {
@@ -22,5 +34,14 @@ export default createGlobalStyle`
     --gray-200: #EEEEEE;
     ---gray-100: #FAFAFA
     --gray-50: #F7F7F7;
+  }
+
+  input { 
+    :-webkit-autofill, :-webkit-autofill:focus {
+    transition: background-color 600000s 0s, color 600000s 0s;
+
+    [data-autocompleted] {
+      background-color: transparent !important;
+    }
   }
 `;

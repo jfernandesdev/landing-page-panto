@@ -20,29 +20,29 @@ function Navbar() {
      
       <Nav>
         <NavItem>
-          <NavLink dropdown>Furniture</NavLink>
+          <NavLink dropdown>Mobília</NavLink>
           <DropDownMenu>
-            <DropDownItem href="chair">Chair</DropDownItem>
-            <DropDownItem href="beds">Beds</DropDownItem>
-            <DropDownItem href="sofa">Sofa</DropDownItem>
-            <DropDownItem href="lamp">Lamp</DropDownItem>
+            <DropDownItem href="chair">Cadeira</DropDownItem>
+            <DropDownItem href="beds">Cama</DropDownItem>
+            <DropDownItem href="sofa">Sofá</DropDownItem>
+            <DropDownItem href="lamp">Lâmpada</DropDownItem>
           </DropDownMenu>
         </NavItem>
 
         <NavItem>
-          <NavLink href="#">Shop</NavLink>
+          <NavLink href="#">Comprar</NavLink>
         </NavItem>
 
         <NavItem>
-          <NavLink href="#">About Us</NavLink>
+          <NavLink href="#">Sobre nós</NavLink>
         </NavItem>
 
         <NavItem>
-           <NavLink href="#">Contact</NavLink>
+           <NavLink href="#">Contato</NavLink>
         </NavItem>  
       </Nav>
 
-      <Cart amount={3}>
+      <Cart amount={3} title='Ver minha sacola'>
         <ShoppingBag />
       </Cart>
     </Wrapper>

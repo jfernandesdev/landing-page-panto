@@ -105,8 +105,8 @@ export const DropDownMenu = styled.ul`
   flex-direction: column;
   padding: 5px 15px;
   margin-top: 5px;
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(4px);
+  background: rgba(255, 255, 255, 0.20);
+  backdrop-filter: blur(8px);
   border-radius: 5px;
   transition: linear 0.3s ease 0s;
 `;
@@ -115,7 +115,7 @@ export const DropDownItem = styled.a`
   color: var(--white);
   text-decoration: none;
   padding: 10px;
-  opacity: 0.7;
+  opacity: 0.8;
 
   :hover {
     opacity: 1;
