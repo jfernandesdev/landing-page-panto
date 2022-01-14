@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Form = styled.form`
-  width: 250px;
+  width: 300px;
   background: rgba(255, 255, 255, 0.15);
   border: 0.5px solid rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(8px);

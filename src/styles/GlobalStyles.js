@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
   * {
@@ -34,6 +34,30 @@ export default createGlobalStyle`
     --gray-200: #EEEEEE;
     ---gray-100: #FAFAFA
     --gray-50: #F7F7F7;
+  }
+
+  h2 {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 52px;
+    color: #1E1E1E;
+    margin-bottom: 20px;
+  }
+
+  h3 {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    color: #1E1E1E;
+    opacity: 0.9;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 185%;
+    color: #1E1E1E;
+    opacity: 0.8;
   }
 
   input { 

@@ -56,7 +56,7 @@ export const Nav = styled.ul`
 export const NavItem = styled.li`
   padding: 0 30px;
 
-  :hover > ul {
+  :hover > ul, :focus > ul, :visited > ul, :active > ul {
     display: flex;
   }
 `;
@@ -109,6 +109,7 @@ export const DropDownMenu = styled.ul`
   backdrop-filter: blur(8px);
   border-radius: 5px;
   transition: linear 0.3s ease 0s;
+  z-index: 2;
 `;
 
 export const DropDownItem = styled.a`

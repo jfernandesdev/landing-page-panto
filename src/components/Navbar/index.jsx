@@ -20,7 +20,7 @@ function Navbar() {
      
       <Nav>
         <NavItem>
-          <NavLink dropdown>Mobília</NavLink>
+          <NavLink href="#" dropdown>Mobília</NavLink>
           <DropDownMenu>
             <DropDownItem href="chair">Cadeira</DropDownItem>
             <DropDownItem href="beds">Cama</DropDownItem>

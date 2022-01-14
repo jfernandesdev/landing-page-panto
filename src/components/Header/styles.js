@@ -3,10 +3,10 @@ import styled from 'styled-components';
 import backgroundHeader from '../../assets/images/background-header.jpg';
 
 export const Container = styled.div`
-  background: ${`url(${backgroundHeader}) no-repeat center center`};
+  background: ${`url(${backgroundHeader}) no-repeat bottom center`};
 
   background-size: cover;
-  height: 105vh;
+  height: 110vh;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -18,7 +18,7 @@ export const Content = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  transform: translateY(18%)
+  transform: translateY(15%)
 `;
 
 export const Title = styled.h1`
@@ -26,8 +26,9 @@ export const Title = styled.h1`
   line-height: 130%;
 `;
 
-export const Subtitle = styled.p`
+export const Subtitle = styled.h4`
   font-size: 18px;
+  font-weight: 400;
   line-height: 160%;
   margin: 10px 0;
 `;
