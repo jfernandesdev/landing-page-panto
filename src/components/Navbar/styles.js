@@ -1,16 +1,19 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
+  /* background: ${props => (props.black ? `rgb(62, 70, 76)` : `transparent`)}; */
   background: transparent;
   position: absolute;
   width: 100%;
   top: 0;
   color: var(--white);
-  height: 100px;
+  height: 80px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 5%;
+  z-index: 3;
+  transition: all ease 0.4s;
 `;
 
 export const Cart = styled.button`

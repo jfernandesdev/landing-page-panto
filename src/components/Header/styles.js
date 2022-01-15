@@ -4,7 +4,6 @@ import backgroundHeader from '../../assets/images/background-header.jpg';
 
 export const Container = styled.div`
   background: ${`url(${backgroundHeader}) no-repeat bottom center`};
-
   background-size: cover;
   height: 110vh;
   width: 100%;

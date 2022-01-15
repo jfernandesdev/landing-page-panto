@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 import LogoPanto from '../../assets/images/logo-panto.svg';
 import { ShoppingBag } from '../../styles/Icons';
@@ -14,8 +14,26 @@ import {
 } from './styles';
 
 function Navbar() {
+  const [blackHeader, setBlackHeader] = useState(false);
+
+  useEffect(() => {
+    const scrollListener = () => {
+      if (window.scrollY > 15) {
+        setBlackHeader(true);
+      } else {
+        setBlackHeader(false);
+      }
+    }
+
+    window.addEventListener('scroll', scrollListener);
+
+    return () => {
+      window.removeEventListener('scroll', scrollListener);
+    }
+  }, []);
+
   return (
-    <Wrapper>
+    <Wrapper black={blackHeader}>
       <img src={LogoPanto} alt="Panto" />
      
       <Nav>

@@ -32,25 +32,8 @@ export default createGlobalStyle`
     --blue-dark: #0D1B39;
     --gray-300: #8D8D8D;
     --gray-200: #EEEEEE;
-    ---gray-100: #FAFAFA
+    ---gray-100: #FAFAFA;
     --gray-50: #F7F7F7;
-  }
-
-  h2 {
-    font-weight: bold;
-    font-size: 40px;
-    line-height: 52px;
-    color: #1E1E1E;
-    margin-bottom: 20px;
-  }
-
-  h3 {
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 30px;
-    color: #1E1E1E;
-    opacity: 0.9;
-    margin-bottom: 20px;
   }
 
   p {

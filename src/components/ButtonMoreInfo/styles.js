@@ -16,8 +16,4 @@ export const Link = styled.a`
     width: 35px;
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
   }
-
-  :hover > img {
-    width: 45px;
-  }
 `;

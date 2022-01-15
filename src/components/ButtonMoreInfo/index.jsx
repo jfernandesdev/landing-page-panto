@@ -3,10 +3,10 @@ import React from 'react';
 import { Link } from './styles';
 import IconMoreInfo from '../../assets/images/icon-more-info.svg';
 
-function ButtonMoreInfo({ toRedirect}) {
+function ButtonMoreInfo({ toRedirect, viewAll}) {
   return (
     <Link href={toRedirect}>
-      Ver mais 
+      {viewAll ? 'Ver todos' : 'Ver mais'} 
      <img src={IconMoreInfo} />
   </Link>
   );
