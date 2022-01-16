@@ -80,21 +80,6 @@ export const TitleProduct = styled.h3`
 
 `;
 
-export const StarRating = styled.div`
-  display: flex;
-
-  > svg {
-    width: 18px;
-    margin-top: 5px;
-    color: var(--orange-50);
-    opacity: 0.4;
-
-    :nth-child(-n+${props => props.classification}) {
-      opacity: 1;
-    }
-  }
-`;
-
 export const Price = styled.h4`
   font-family: 'Inter', Arial, Helvetica, sans-serif;
   font-weight: 600;

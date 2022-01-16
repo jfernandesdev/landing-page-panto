@@ -1,6 +1,7 @@
 import React from 'react';
-import {Star, Plus} from '../../styles/Icons';
+import {Plus} from '../../styles/Icons';
 import ButtonIcon from '../ButtonIcon';
+import StarRating from '../StarRating';
 
 import {
   Card,
@@ -9,7 +10,6 @@ import {
   CardBody,
   TagCategory,
   TitleProduct,
-  StarRating,
   Price
 } from './styles';
 
@@ -31,12 +31,8 @@ function ProductCard({product}) {
 
         <TitleProduct>{product.name}</TitleProduct>
 
-        <StarRating classification={product.starRating}>
-          {Array.from({length: 5}).map((_, index) => (
-            <Star key={index} />
-          ))}
-        </StarRating>
-
+        <StarRating classification={product.starRating} />
+         
         <Price>
           <span>R$</span> {product.price}
         </Price>
