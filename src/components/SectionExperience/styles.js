@@ -54,15 +54,18 @@ export const ImageSection = styled.div`
   :before {
     content: '';
     position: absolute;
-    width: 555px;
-    height: 400px;
+    width: 80%;
+    height: 70%;
     background: ${props =>
-      props.image && `url(${props.image}) no-repeat center center`};
+      props.image && `url(${props.image}) no-repeat bottom`};
     background-size: cover;
-    filter: blur(50px);
-    border-radius: 20px;
-    bottom: -5%;
-    left: -5%;
+    filter: blur(20px);
+    border-radius: 49px;
+    opacity: 0.5;
+    bottom: -8%;
+    left: 5%;
+    right: 0;
+    margin: auto !important;
     z-index: -2;
   }
 `;

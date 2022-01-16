@@ -7,6 +7,10 @@ export const Card = styled.div`
   border-radius: 20px;
   margin: 50px auto 0;
   cursor: pointer;
+
+  :hover > div > button {
+    -webkit-animation: pulse 1.5s infinite;
+  }
 `;
 
 export const CardHeader = styled.div`
