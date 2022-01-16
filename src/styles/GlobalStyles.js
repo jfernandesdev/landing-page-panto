@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle } from 'styled-components';
+import styled, {createGlobalStyle} from 'styled-components';
 
 export default createGlobalStyle`
   * {
@@ -32,7 +32,7 @@ export default createGlobalStyle`
     --blue-dark: #0D1B39;
     --gray-300: #8D8D8D;
     --gray-200: #EEEEEE;
-    ---gray-100: #FAFAFA;
+    --gray-100: #FAFAFA;
     --gray-50: #F7F7F7;
   }
 
@@ -49,6 +49,21 @@ export default createGlobalStyle`
 
     [data-autocompleted] {
       background-color: transparent !important;
+    }
+  }
+
+  @keyframes pulse {
+    0% {
+      -moz-box-shadow: 0 0 0 0 rgba(12, 24, 51, 0.4);
+      box-shadow: 0 0 0 0 rgba(12, 24, 51, 0.4);
+    }
+    70% {
+        -moz-box-shadow: 0 0 0 10px rgba(12, 24, 51, 0);
+        box-shadow: 0 0 0 10px rgba(12, 24, 51, 0);
+    }
+    100% {
+        -moz-box-shadow: 0 0 0 0 rgba(12, 24, 51, 0);
+        box-shadow: 0 0 0 0 rgba(12, 24, 51, 0);
     }
   }
 `;

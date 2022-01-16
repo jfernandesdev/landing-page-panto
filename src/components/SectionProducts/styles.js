@@ -8,3 +8,7 @@ export const Container = styled.div`
   background: var(--gray-50);
   padding: 5%;
 `;
+
+export const Slider = styled.div`
+  display: flex;
+`;

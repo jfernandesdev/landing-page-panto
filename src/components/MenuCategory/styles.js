@@ -9,7 +9,7 @@ export const CategoryMenu = styled.ul`
   white-space: nowrap;
   height: 57px;
   width: auto;
-  margin: 20px;
+  margin: 10px 0 15px;
   border-radius: 44px;
   padding: 5px;
 `;
