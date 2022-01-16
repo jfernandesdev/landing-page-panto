@@ -35,5 +35,13 @@ export const listProducts = [
     image: ImageChar2,
     price: 921,
     starRating: 5
-  }
+  },
+  {
+    id: 5,
+    category: 'chair',
+    name: 'Nyantuy Chair',
+    image: ImageChar1,
+    price: 921,
+    starRating: 5
+  },
 ];

@@ -7,7 +7,7 @@ export const CategoryMenu = styled.ul`
   justify-content: space-between;
   list-style-type: none;
   white-space: nowrap;
-  height: 57px;
+  height: 50px;
   width: auto;
   margin: 10px 0 15px;
   border-radius: 44px;
@@ -17,7 +17,7 @@ export const CategoryMenu = styled.ul`
 export const CategoryItem = styled.li`
   background: ${props => (props.active ? `var(--white)` : `transparent`)};
   border-radius: 32px;
-  height: 45px;
+  height: 40px;
   padding: 7px 20px;
   margin: 6px;
 
@@ -27,7 +27,7 @@ export const CategoryItem = styled.li`
 
   color: var(--black);
   opacity: 0.8;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 500;
   transition: all 0.2s;
   cursor: pointer;

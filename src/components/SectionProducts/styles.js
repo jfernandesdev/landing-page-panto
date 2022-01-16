@@ -9,6 +9,13 @@ export const Container = styled.div`
   padding: 5%;
 `;
 
-export const Slider = styled.div`
+export const WrapperCarousel = styled.div`
+  width: 100%;
   display: flex;
+  justify-content: center;
+  margin: 10px 0 10px;
+
+  > div {
+    width: 90%;
+  }
 `;

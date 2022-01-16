@@ -3,9 +3,9 @@ import styled from 'styled-components';
 export const Card = styled.div`
   background: var(--white);
   height: 360px;
-  width: 260px;
+  width: 240px;
   border-radius: 20px;
-  margin: 60px 20px 10px;
+  margin: 50px auto 0;
   cursor: pointer;
 `;
 
@@ -68,8 +68,8 @@ export const TagCategory = styled.span`
 
 export const TitleProduct = styled.h3`
   font-family: 'Inter', Arial, Helvetica, sans-serif;
-  font-weight: 600;
-  font-size: 20px;
+  font-weight: bold;
+  font-size: 19px;
   line-height: 26px;
   text-transform: capitalize;
   color: var(--blue-dark);

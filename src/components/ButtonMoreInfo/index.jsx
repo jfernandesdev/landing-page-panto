@@ -7,7 +7,7 @@ function ButtonMoreInfo({ toRedirect, viewAll}) {
   return (
     <Link href={toRedirect}>
       {viewAll ? 'Ver todos' : 'Ver mais'} 
-     <img src={IconMoreInfo} />
+     <img src={IconMoreInfo} alt="Ver mais" />
   </Link>
   );
 }

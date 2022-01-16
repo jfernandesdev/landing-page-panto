@@ -4,10 +4,14 @@ import SectionTitle from '../SectionTitle';
 import MenuCategory from '../MenuCategory';
 import ProductCard from '../ProductCard';
 import ButtonMoreInfo from '../ButtonMoreInfo';
+import ButtonIcon from '../ButtonIcon';
 
-import {Container, Slider} from './styles';
+import {ArrowLeft, ArrowRight} from '../../styles/Icons';
+import {Container, WrapperCarousel} from './styles';
 
 import {listProducts} from '../../utils/listProducts';
+
+import Carousel from 'react-grid-carousel';
 
 function SectionProducts() {
   return (
@@ -15,11 +19,19 @@ function SectionProducts() {
       <SectionTitle>Produtos mais vendidos</SectionTitle>
       <MenuCategory />
 
-      <Slider>
-        {listProducts.map((product, index) => (
-          <ProductCard key={index} product={product} />
-        ))}
-      </Slider>
+      <WrapperCarousel>
+        <Carousel 
+        cols={4}  
+        gap={10} 
+        loop
+        >
+          {listProducts.map((product, index) => (
+            <Carousel.Item key={index}>
+              <ProductCard product={product} />
+            </Carousel.Item>
+          ))}
+        </Carousel>
+      </WrapperCarousel>
 
       <ButtonMoreInfo toRedirect='#' viewAll />
     </Container>

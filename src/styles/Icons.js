@@ -1,7 +1,8 @@
 export {
   ShoppingBag, 
   Plus, 
-  ArrowLeft, 
+  ArrowLeft,
+  ArrowRight, 
   Star
 } from 'styled-icons/heroicons-solid';
 
