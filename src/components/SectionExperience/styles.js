@@ -7,7 +7,12 @@ export const Container = styled.div`
   grid-gap: 10;
   align-items: center;
   justify-content: center;
-  padding: 10% 0;
+  padding: 10% 0 5%;
+
+  @media(max-width: 769px) {
+    display: block;
+    padding-top: 90px;
+  }
 `;
 
 export const WrapperImage = styled.div`
@@ -19,8 +24,7 @@ export const WrapperImage = styled.div`
   align-items: center;
   position: relative;
 
-  :before,
-  :after {
+  :before, :after {
     content: '';
     position: absolute;
     width: 495px;
@@ -38,6 +42,23 @@ export const WrapperImage = styled.div`
   :after {
     right: 5%;
     top: 18%;
+  }
+
+  @media (max-width: 769px) {
+    :before, :after {
+      width: 200px;
+      height: 160px;
+    }
+
+    :before {
+      left: -5%;
+      top: -20%;
+    }
+
+    :after {
+      right: 15%;
+      top: 10%;
+    }
   }
 `;
 
@@ -68,8 +89,19 @@ export const ImageSection = styled.div`
     margin: auto !important;
     z-index: -2;
   }
+
+  @media (max-width: 769px) {
+    width: 300px;
+    height: 200px;
+    margin-left: -35%;
+    margin-bottom: 20px;
+  }
 `;
 
 export const Content = styled.div`
   padding: 10% 20% 10% 10%;
+
+  @media (max-width: 769px) {
+    padding: 8%;
+  }
 `;

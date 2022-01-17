@@ -7,8 +7,13 @@ export default createGlobalStyle`
     box-sizing: border-box;
   }
 
+  #root {
+    width: 100%;
+    max-width: 100vw;
+    overflow-X: hidden;
+  }
+  
   body {
-    overflow-x: hidden;
     font: 16px 'Gilroy', 'Inter', Arial, Helvetica, sans-serif;
 
     ::-webkit-scrollbar {
@@ -66,4 +71,50 @@ export default createGlobalStyle`
         box-shadow: 0 0 0 0 rgba(12, 24, 51, 0);
     }
   }
+
+
+  @keyframes hamburger4animTop {
+    0% {
+      display: none;
+    }
+    1% {
+      display: inline-block;
+    }
+    60% {
+      transform: none;
+      opacity: 0;
+    }
+    100% {
+      transform: rotate(45deg);
+      opacity: 1;
+    }
+  }
+  @keyframes hamburger4animBottom {
+    0% {
+      display: none;
+    }
+    1% {
+      display: inline-block;
+    }
+    60% {
+      transform: none;
+      opacity: 0;
+    }
+    100% {
+      transform: rotate(-45deg);
+      opacity: 1;
+    }
+  }
+}
+
+span[type=next], span[type=prev]{
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+}
+
+@media(max-width: 769px) {
+  div:has(span[type=next]), 
+  div:has(span[type=prev]) {
+    display: invert !important;
+  }
+}
 `;

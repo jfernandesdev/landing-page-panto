@@ -12,6 +12,22 @@ export const CategoryMenu = styled.ul`
   margin: 10px 0 15px;
   border-radius: 44px;
   padding: 5px;
+
+  @media (max-width: 769px) {
+    width: 100%;
+    padding: 5px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+    ::-webkit-scrollbar {
+      height: 0;
+
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: rgba(36, 37, 41, 0.5);
+    }
+  }
 `;
 
 export const CategoryItem = styled.li`

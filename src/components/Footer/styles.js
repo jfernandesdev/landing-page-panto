@@ -8,6 +8,33 @@ export const Container = styled.div`
   grid-template-columns: 3fr 1fr 1fr 1fr;
   grid-gap: 10%;
   padding: 0 10%;
+
+  @media (max-width: 769px) {
+    height: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    padding: 10% 5%;
+    padding-bottom: 20px;
+   
+    > :nth-child(1) {
+      grid-column-start: 1;
+      grid-column-end: 4;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      > p {
+        display: none;
+      }
+    }
+
+    > :nth-child(2),
+    > :nth-child(3),
+    > :nth-child(4) {
+      grid-row-start: 2;
+      grid-row-end: 2;
+    }
+  }
 `;
 
 export const Logo = styled.img`
@@ -38,6 +65,10 @@ export const SubtitleFooter = styled.h6`
   line-height: 22px;
   color: var(--orange-100);
   margin: 10px;
+
+  @media (max-width: 769px) {
+    font-size: 15px;
+  }
 `;
 
 export const LinkFooter = styled.a`
@@ -60,6 +91,10 @@ export const LinkFooter = styled.a`
     font-weight: 500;
     color: var(--orange-50);
   }
+
+  @media(max-width: 769px) {
+    font-size: 14px;
+  }
 `;
 
 export const Credits = styled.div`
@@ -69,6 +104,11 @@ export const Credits = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 0 10%;
+
+  @media (max-width: 769px) {
+    flex-direction: column;
+    padding-bottom: 10%;
+  }
 `;
 
 export const Copy = styled.span`
@@ -76,5 +116,9 @@ export const Copy = styled.span`
   line-height: 20px;
   letter-spacing: -0.204545px;
   opacity: 0.5;
+
+  @media (max-width: 769px) {
+    font-size: 14px;
+  }
 `;
 

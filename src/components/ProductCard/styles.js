@@ -81,7 +81,6 @@ export const TitleProduct = styled.h3`
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis; 
-
 `;
 
 export const Price = styled.h4`

@@ -8,6 +8,11 @@ export const Container = styled.div`
   justify-content: center;
   background: var(--white);
   padding: 5%;
+
+  @media(max-width: 769px) {
+    text-align: center;
+    padding: 0;
+  }
 `;
 
 export const WrapperCarousel = styled.div`
@@ -20,5 +25,12 @@ export const WrapperCarousel = styled.div`
   > div {
     width: 90%;
     padding: 0 20px;
+  }
+
+  @media(max-width: 769px) {
+    > div {
+      width: 100%;
+      padding: 0;
+    }
   }
 `;

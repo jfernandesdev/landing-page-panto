@@ -7,23 +7,43 @@ export const Container = styled.div`
   grid-gap: 10;
   align-items: center;
   justify-content: center;
-  padding: 10% 0;
+  padding: 5% 0 10% 0;
+
+  @media(max-width: 769px) {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
+
+
+    >:nth-child(2) {
+      order: -1;
+    }
+  }
 `;
 
 export const Content = styled.div`
-  padding: 10% 15% 10% 20%;
+  padding: 5% 15% 5% 20%;
+
+  @media(max-width: 769px) {
+    padding: 8%;
+    margin-top: 35px;
+  }
 `;
 
 export const GridImages = styled.div`
   width: 100%;
   height: 100%;
-
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(5, 1fr);
   grid-gap: 50px 30px;
   position: relative;
   right: -10%;
+
+  @media(max-width: 769px) {
+    height: 250px;
+    grid-gap: 40px 20px;
+  }
 
   > :nth-child(1) {
     grid-column-start: 1;
@@ -44,7 +64,7 @@ export const GridImages = styled.div`
     grid-column-end: 5;
     grid-row-start: 2;
     grid-row-end: 6;
-   
+
     :before {
       content: '';
       position: absolute;
@@ -55,6 +75,13 @@ export const GridImages = styled.div`
       right: -25%;
       top: -15%;
       z-index: -1;
+
+      @media (max-width: 769px) {
+        width: 200px;
+        height: 125px;
+        right: 30%;
+        top: 8%;
+      }
     }
   }
 `;

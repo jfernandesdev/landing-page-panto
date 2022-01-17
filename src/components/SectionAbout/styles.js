@@ -7,6 +7,11 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   padding: 5%;
+
+  @media(max-width: 769px) {
+    display: block;
+    padding: 8%;
+  }
 `;
 
 export const Wrapper = styled.div`
@@ -22,6 +27,10 @@ export const Wrapper = styled.div`
 
   p {
     font-size: 15px;
+  }
+
+  @media(max-width: 769px) {
+    padding: 5% 0;
   }
 `;
 

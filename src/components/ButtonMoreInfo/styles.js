@@ -15,5 +15,13 @@ export const Link = styled.a`
     margin-left: 5px;
     width: 35px;
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
+
+    @media (max-width: 769px) {
+      width: 40px;
+    }
+  }
+
+  @media (max-width: 769px) {
+    font-size: 16px;
   }
 `;

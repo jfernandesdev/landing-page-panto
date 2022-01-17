@@ -7,6 +7,10 @@ export const Container = styled.div`
   align-items: center;
   background: var(--gray-50);
   padding: 5%;
+
+  @media (max-width: 769px) {
+    padding: 8%;
+  }
 `;
 
 export const WrapperCarousel = styled.div`
@@ -17,5 +21,11 @@ export const WrapperCarousel = styled.div`
 
   > div {
     width: 90%;
+  }
+
+  @media (max-width: 769px) {
+    > div {
+      width: 95%;
+    }
   }
 `;

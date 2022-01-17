@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-  /* background: ${props => (props.black ? `rgb(62, 70, 76)` : `transparent`)}; */
+  /* background: ${props =>
+    props.black ? `rgb(62, 70, 76)` : `transparent`}; */
   background: transparent;
   position: absolute;
   width: 100%;
@@ -14,6 +15,17 @@ export const Wrapper = styled.div`
   padding: 0 5%;
   z-index: 3;
   transition: all ease 0.4s;
+
+  @media (max-width: 769px) {
+    padding: 8%;
+    position: fixed;
+    background: ${props =>
+      props.black ? `rgb(62, 70, 76)` : `transparent`};
+  }
+`;
+
+export const Logo = styled.img`
+  z-index: 2;
 `;
 
 export const Cart = styled.button`
@@ -123,5 +135,110 @@ export const DropDownItem = styled.a`
 
   :hover {
     opacity: 1;
+  }
+`;
+
+
+export const NavContainer = styled.div`
+  @media (max-width: 768px) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(49, 56, 62);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    visibility: hidden;
+    width: 0;
+   
+    &.openMenu {
+      width: 100%;
+      visibility: revert;
+    }
+
+    > ul {
+      flex-direction: column;
+      text-align: center;
+
+      li {
+        font-size: 22px;
+        padding: 25px;
+      }
+    }
+  }
+`;
+
+
+export const WrapperBtn = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const NavbarToggler = styled.button`
+  @media(max-width: 769px) {
+    display: flex;
+  }
+
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 2em;
+  height: 1.5em;
+  position: relative;
+  margin-left: 20px;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+
+  > span {
+    display: inline-block;
+    width: 100%;
+    height: 8%;
+    background: var(--white);
+    transition: all 0.5s ease;
+    transform-origin: left;
+
+    &:nth-of-type(1),
+    &:nth-of-type(5) {
+      opacity: 0;
+    }
+
+    &:nth-of-type(2) {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 70%;
+    }
+
+    &:nth-of-type(3) {
+      transition-delay: 0.1s;
+    }
+
+    &:nth-of-type(4) {
+      transition-delay: 0.2s;
+      position: absolute;
+      bottom: 0;
+    }
+  }
+
+  &.activated {
+    span {
+      width: 0;
+      &:nth-of-type(1) {
+        width: 100%;
+        animation: hamburger4animTop 0.8s ease;
+        animation-fill-mode: forwards;
+        animation-delay: 0.4s;
+      }
+      &:nth-of-type(5) {
+        width: 100%;
+        animation: hamburger4animBottom 0.8s ease;
+        animation-fill-mode: forwards;
+        animation-delay: 0.4s;
+      }
+    }
   }
 `;
