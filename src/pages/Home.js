@@ -6,6 +6,7 @@ import SectionProducts from '../components/SectionProducts';
 import SectionExperience from '../components/SectionExperience';
 import SectionMaterials from '../components/SectionMaterials';
 import SectionTestimonials from '../components/SectionTestimonials';
+import Footer from '../components/Footer';
 
 function Home() {
   return (
@@ -16,6 +17,7 @@ function Home() {
       <SectionExperience />
       <SectionMaterials />
       <SectionTestimonials />
+      <Footer />
     </>
   );
 }
