@@ -36,6 +36,7 @@ Projeto Web fictício desenvolvido para fins didáticos. TEMA: "Landing Page Pan
 
 ### Dê uma olhada como o projeto ficou! 👀
 
+https://panto-jfernandesdev.netlify.app/
 
 <br>
 
